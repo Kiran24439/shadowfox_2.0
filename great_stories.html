@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCB Great Stories | IPL 2025 Champions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(255, 0, 100, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcb05;
+      transform: scale(1.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcb05;
+      margin: 2rem 0 1rem;
+      font-size: 3rem;
+      text-shadow: 2px 2px 12px black;
+      animation: fadeIn 2s ease;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 0 35px rgba(255, 203, 5, 0.6);
+      animation: zoomIn 2s ease;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 20px;
+    }
+
+    .story {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      box-shadow: 0 0 20px rgba(255, 0, 80, 0.3);
+      backdrop-filter: blur(6px);
+      animation: floatUp 2s ease;
+    }
+
+    .story img {
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 203, 5, 0.4);
+      transition: transform 0.4s ease;
+    }
+
+    .story img:hover {
+      transform: scale(1.05) rotateY(5deg);
+    }
+
+    .story-text h2 {
+      color: #ffcb05;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .story-text p {
+      line-height: 1.6;
+      color: #eee;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #000;
+      color: #aaa;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #ffcb05;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .story {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .story img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="RCB.avif" alt="RCB Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="great_stories.html">Great Stories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Updated Heading -->
+  <h1>RCB Lifts IPL 2025 Trophy!</h1>
+
+  <div class="content">
+
+    <!-- 🎥 Video Section -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/CDfUpSeV8v4" 
+        title="RCB 2025 Winning Moment" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <!-- 🌟 AB de Villiers Story -->
+    <div class="story">
+      <img src="abd.jpeg" alt="AB de Villiers" />
+      <div class="story-text">
+        <h2>AB de Villiers' Everlasting Legacy</h2>
+        <p>
+          AB de Villiers might have retired from all forms of cricket, but his legacy continues to inspire generations of RCB players and fans. His unmatched dedication, thrilling performances, and magical moments shaped RCB's spirit. As RCB finally lifted the IPL 2025 Trophy, every fan remembered the foundation he helped build. Forever 360°!
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 RCB Fan Club | Built with ❤️ for RCBians  
+    | Follow us:
+    <a href="https://www.instagram.com/royalchallengersbangalore" target="_blank">Instagram</a>
+    <a href="https://twitter.com/RCBTweets" target="_blank">Twitter</a>
+  </footer>
+
+</body>
+</html>
+

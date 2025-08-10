@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCB Stats | IPL 2025</title>
+  <style>
+    body { margin:0; font-family:'Segoe UI',sans-serif; background:linear-gradient(145deg,#111,#44001f); color:#fff; }
+    header { display:flex; justify-content:space-between; align-items:center; background:#000; padding:1rem 2rem; }
+    header img { height:60px; }
+    nav ul { list-style:none; display:flex; gap:1.5rem; margin:0; padding:0; }
+    nav a { color:#fff; text-decoration:none; font-size:1.1rem; font-weight:600; transition:.3s; }
+    nav a:hover { color:#ffcb05; transform: scale(1.1); }
+    h1 { text-align:center; color:#ffcb05; margin:2rem 0; font-size:2.8rem; text-shadow:2px 2px 6px black; }
+    .stats-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2rem; padding:2rem; }
+    .stat-card { background:linear-gradient(145deg,#1e1e1e,#2b2b2b); border-radius:16px; padding:1.5rem; box-shadow:0 10px 20px rgba(255,0,76,0.3); transition:.4s; transform-style:preserve-3d; perspective:1000px; }
+    .stat-card:hover { transform:rotateY(5deg) scale(1.03); }
+    .stat-card h2 { color:#ffcb05; text-align:center; margin-bottom:.5rem; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:.6rem; text-align:center; border-bottom:1px solid #555; font-size:.95rem; }
+    th { color:#c1002b; }
+    tr:hover { background:rgba(255,255,255,0.1); }
+    footer { text-align:center; padding:1rem; background:#000; color:#aaa; margin-top:2rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="RCB.avif" alt="RCB Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="great_stories.html">Great Stories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>RCB Stats – IPL 2025</h1>
+
+  <div class="stats-container">
+    <!-- Batting -->
+    <div class="stat-card">
+      <h2>Batting – Top RCB Run Scorers</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Matches</th><th>Runs</th><th>Avg</th><th>SR</th></tr></thead>
+        <tbody>
+          <tr><td>Virat Kohli</td><td>15</td><td>657</td><td>54.75</td><td>144.71</td></tr>
+          <tr><td>Phil Salt</td><td>13</td><td>403</td><td>33.58</td><td>175.98</td></tr>
+          <tr><td>Rajat Patidar</td><td>15</td><td>312</td><td>24.00</td><td>143.78</td></tr>
+          <tr><td>Devdutt Padikkal</td><td>10</td><td>247</td><td>27.44</td><td>150.61</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bowling -->
+    <div class="stat-card">
+      <h2>Bowling – RCB Wicket Leaders</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Matches</th><th>Wickets</th><th>Avg</th><th>Eco</th></tr></thead>
+        <tbody>
+          <tr><td>Josh Hazlewood</td><td>12</td><td>21</td><td>–</td><td>–</td></tr>
+          <tr><td>Krunal Pandya</td><td>14</td><td>15</td><td>–</td><td>–</td></tr>
+          <tr><td>Bhuvneshwar Kumar</td><td>13</td><td>15</td><td>–</td><td>7.84</td></tr>
+          <tr><td>Yash Dayal</td><td>15</td><td>12</td><td>–</td><td>–</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- All‑Rounders -->
+    <div class="stat-card">
+      <h2>All‑Rounder Highlights</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Runs</th><th>Wickets</th><th>SR*</th></tr></thead>
+        <tbody>
+          <tr><td>Tim David</td><td>187</td><td>9</td><td>195.7</td></tr>
+          <tr><td>Liam Livingstone</td><td>112</td><td>2</td><td>133.33</td></tr>
+          <tr><td>Krunal Pandya</td><td>109</td><td>15</td><td>126.74</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 RCB Fan Club | Based on real IPL 2025 stats
+  </footer>
+
+</body>
+</html>

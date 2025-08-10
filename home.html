@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCB Fan Home | IPL 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/4cb168ba4b.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #000000, #c1002b);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 1rem 2rem;
+    }
+
+    .rcb-logo {
+      height: 65px;
+      transition: transform 0.5s ease, filter 0.3s ease;
+    }
+
+    .rcb-logo:hover {
+      transform: scale(1.2) rotateY(360deg);
+      filter: drop-shadow(0 0 10px #ffcb05);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcb05;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      perspective: 1000px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #ffcb05;
+      transform: rotateX(20deg);
+      animation: heroFloat 4s ease-in-out infinite;
+      text-shadow: 0 0 20px rgba(255, 203, 5, 0.6);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #eee;
+    }
+
+    @keyframes heroFloat {
+      0%, 100% { transform: rotateX(20deg) translateY(0); }
+      50% { transform: rotateX(20deg) translateY(-10px); }
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .card {
+      background: white;
+      color: #000;
+      border-radius: 16px;
+      text-align: center;
+      padding: 2rem 1.2rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transform-style: preserve-3d;
+    }
+
+    .card:hover {
+      transform: rotateY(10deg) scale(1.05);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 0.7rem;
+      color: #c1002b;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #111;
+      color: #aaa;
+      position: relative;
+    }
+
+    .social-icons {
+      margin-top: 0.7rem;
+    }
+
+    .social-icons a {
+      color: #ffcb05;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ffffff;
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="RCB.avif" alt="RCB Logo" class="rcb-logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="great_stories.html">Great Stories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to RCB Fan Site</h1>
+    <p>Explore everything about Royal Challengers Bangalore for IPL 2025</p>
+  </section>
+
+  <section class="cards">
+    <a href="about.html" class="card">
+      <h2>About</h2>
+      <p>Know more about RCB's legacy, vision, and spirit.</p>
+    </a>
+    <a href="players.html" class="card">
+      <h2>Players</h2>
+      <p>Meet the squad for IPL 2025 — batsmen, bowlers, and all-rounders.</p>
+    </a>
+    <a href="schedule.html" class="card">
+      <h2>Schedule</h2>
+      <p>Don't miss a match! Full match fixtures and venues.</p>
+    </a>
+    <a href="stats.html" class="card">
+      <h2>Stats</h2>
+      <p>Track player and team stats throughout the season.</p>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 RCB Fan Club. Built with ❤️ for RCB fans.
+    <p>Follow RCB on: 
+      <a href="https://www.instagram.com/royalchallengersbangalore" target="_blank">Instagram</a> |
+      <a href="https://twitter.com/RCBTweets" target="_blank">Twitter</a> |
+      <a href="https://www.royalchallengers.com/" target="_blank">Official Site</a>
+    </p>
+  </footer>
+
+</body>
+</html>
